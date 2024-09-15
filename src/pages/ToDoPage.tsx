@@ -19,7 +19,10 @@ const ToDoPage: React.FC = () => {
   return (
     <div>
       <h1>To-Do List</h1>
-      <Input value={newTask} onChange={(e) => setNewTask(e.target.value)} placeholder="New task..." />
+      <Input 
+        value={newTask} 
+        onChange={(e) => setNewTask(e.target.value)} 
+        placeholder="New task..." />
       <button onClick={handleAddTask} >Add Task</button>
       <ul>
         {tasks.map((task, index) => (

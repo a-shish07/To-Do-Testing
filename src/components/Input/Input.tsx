@@ -8,7 +8,10 @@ interface InputProps {
 }
 
 const Input: React.FC<InputProps> = ({ value, onChange, placeholder }) => {
-  return <InputStyled value={value} onChange={onChange} placeholder={placeholder} />;
+  return <InputStyled  
+                  value={value} 
+                  onChange={onChange} 
+                  placeholder={placeholder} />;
 };
 
 export default Input;
